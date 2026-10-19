@@ -35,7 +35,7 @@ export const profile = {
    * `src` di bawah. Rasio yang paling pas: 4:5 (mis. 1000 × 1250).
    */
   photo: {
-    src: "/images/sarah-placeholder.jpg",
+    src: "/images/sarah.jpeg",
     alt: {
       id: "Foto profil Sarah Amelia",
       en: "Portrait photo of Sarah Amelia",
@@ -98,9 +98,9 @@ export const profile = {
     { value: 8, decimals: 0, suffix: "", label: { id: "Sertifikat & kelas", en: "Certificates & courses" } as L },
   ],
   socials: [
-    { icon: "github", label: "GitHub", href: "https://github.com/", handle: "@sarahamelia" },
-    { icon: "linkedin", label: "LinkedIn", href: "https://linkedin.com/in/", handle: "in/sarahamelia" },
-    { icon: "instagram", label: "Instagram", href: "https://instagram.com/", handle: "@sarah.edits" },
+    { icon: "github", label: "GitHub", href: "https://github.com/srhmeliia55/", handle: "@sarahamelia" },
+    { icon: "linkedin", label: "LinkedIn", href: "https://linkedin.com/in/sarahamelia/", handle: "in/sarahamelia" },
+    { icon: "instagram", label: "Instagram", href: "https://www.instagram.com/srhmeliia/", handle: "@sarah.edits" },
   ] as { icon: SocialIcon; label: string; href: string; handle: string }[],
 };
 
