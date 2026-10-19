@@ -1,7 +1,7 @@
 # Portofolio Sarah Amelia
 
 Website portofolio pribadi yang modern dan profesional untuk **Sarah Amelia** — mahasiswa
-Teknik Informatika semester 5 yang berfokus pada **UI/UX design**, design system, dan prototipe antarmuka.
+Teknik Informatika semester 5 yang berfokus pada **editing video**, motion graphics, dan color grading.
 
 ## ✨ Fitur
 

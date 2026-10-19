@@ -77,7 +77,7 @@ export function Navbar() {
                 {profile.name}
               </span>
               <span className="mt-1 font-mono text-[10px] uppercase tracking-[0.16em] text-accent">
-                UI/UX Designer
+                Video Editor
               </span>
             </span>
           </button>

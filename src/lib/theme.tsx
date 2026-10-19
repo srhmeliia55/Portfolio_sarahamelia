@@ -11,19 +11,6 @@ import {
   type ReactNode,
 } from "react";
 
-/**
- * Tema terang/gelap.
- *
- * Sumber kebenaran ada di atribut `data-theme` pada <html>:
- *   - Skrip inline di <head> (layout.tsx) menyetelnya SEBELUM paint
- *     pertama, jadi tidak ada kedipan warna.
- *   - State React diinisialisasi dari atribut yang sama (lazy initializer),
- *     sehingga render pertama di klien sudah cocok dengan DOM.
- *
- * Catatan penting: TIDAK ada markup yang berubah berdasarkan tema (ikon
- * tombol dipilih lewat CSS), jadi perbedaan nilai state saat hidrasi tidak
- * pernah menghasilkan mismatch atribut.
- */
 
 export type Theme = "light" | "dark";
 

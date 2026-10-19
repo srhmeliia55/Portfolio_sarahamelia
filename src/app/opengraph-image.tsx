@@ -5,6 +5,8 @@ export const alt = siteMeta.title;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
+const siteHost = new URL(siteMeta.url).host;
+
 /** Kartu pratinjau saat tautan dibagikan di media sosial / WhatsApp. */
 export default function OpengraphImage() {
   return new ImageResponse(
@@ -45,7 +47,7 @@ export default function OpengraphImage() {
           <div style={{ display: "flex", flexDirection: "column", marginLeft: 20 }}>
             <span style={{ fontSize: 24, fontWeight: 700, color: "#ffffff" }}>{profile.name}</span>
             <span style={{ fontSize: 15, color: "#a78bfa", letterSpacing: 4, marginTop: 6 }}>
-              UI/UX DESIGNER
+              VIDEO EDITOR
             </span>
           </div>
         </div>
@@ -61,16 +63,16 @@ export default function OpengraphImage() {
               maxWidth: 900,
             }}
           >
-            Merancang pengalaman digital yang intuitif, rapi, dan menyenangkan dipakai.
+            Mengubah footage menjadi cerita yang enak ditonton sampai akhir.
           </span>
           <span style={{ fontSize: 22, color: "#94a3b8", marginTop: 24, maxWidth: 820 }}>
-            Teknik Informatika · Semester 5 · UI/UX · Figma · Design System
+            Teknik Informatika · Semester 5 · Video Editing · Motion Graphics
           </span>
         </div>
 
         {/* Kaki */}
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-          <span style={{ fontSize: 19, color: "#64748b" }}>sarahamelia.example.com</span>
+          <span style={{ fontSize: 19, color: "#64748b" }}>{siteHost}</span>
           <div
             style={{
               display: "flex",

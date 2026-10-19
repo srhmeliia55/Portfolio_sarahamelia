@@ -48,22 +48,22 @@ export const profile = {
   /** Peran yang berganti-ganti di hero section. */
   roles: [
     { id: "Teknik Informatika — Semester 5", en: "Informatics Engineering — 5th Semester" },
-    { id: "UI/UX Designer", en: "UI/UX Designer" },
-    { id: "Design System Enthusiast", en: "Design System Enthusiast" },
-    { id: "Prototyper Antarmuka", en: "Interface Prototyper" },
+    { id: "Video Editor", en: "Video Editor" },
+    { id: "Motion Graphics", en: "Motion Graphics" },
+    { id: "Color Grading", en: "Colour Grading" },
   ] as L[],
   /** Dipakai di kartu foto (About) sebagai label peran. */
   role: {
-    id: "UI/UX Designer",
-    en: "UI/UX Designer",
+    id: "Video Editor",
+    en: "Video Editor",
   } as L,
   headline: {
-    id: "Saya merancang pengalaman digital yang intuitif, rapi, dan menyenangkan dipakai.",
-    en: "I design digital experiences that feel intuitive, tidy, and genuinely pleasant to use.",
+    id: "Saya merangkai potongan gambar menjadi cerita yang enak ditonton sampai akhir.",
+    en: "I turn raw footage into stories people actually want to watch to the end.",
   } as L,
   tagline: {
-    id: "Fokus pada riset pengguna, wireframe, dan design system di Figma. Saat ini menempuh semester 5 sambil mengerjakan studi kasus desain untuk kampus dan UMKM.",
-    en: "Focused on user research, wireframing, and design systems in Figma. Currently in my 5th semester while working on design case studies for campus and small businesses.",
+    id: "Fokus pada editing, motion graphics, dan color grading di Premiere Pro dan After Effects. Saat ini menempuh semester 5 sambil mengerjakan konten video untuk kampus dan UMKM.",
+    en: "Focused on editing, motion graphics, and colour grading in Premiere Pro and After Effects. Currently in my 5th semester while producing video content for campus and small businesses.",
   } as L,
   location: {
     id: "Cilegon, Indonesia",
@@ -72,35 +72,35 @@ export const profile = {
   email: "srhmellia55@gmail.com",
   phone: "+62 812-3456-7890",
   availability: {
-    id: "Terbuka untuk magang UI/UX dan proyek desain",
-    en: "Open to UI/UX internships and design projects",
+    id: "Terbuka untuk magang video editor dan proyek konten",
+    en: "Open to video editing internships and content projects",
   } as L,
   resumeUrl: "#",
   bio: [
     {
-      id: "Saya Sarah Amelia, mahasiswa semester 5 program studi Teknik Informatika yang jatuh cinta pada dunia desain antarmuka. Semuanya dimulai dari rasa penasaran kenapa sebuah halaman bisa terasa begitu nyaman dipakai — dan sejak itu saya tidak berhenti belajar.",
-      en: "I'm Sarah Amelia, a 5th semester Informatics Engineering student who fell in love with interface design. It started with plain curiosity about why some pages simply feel good to use — and I haven't stopped learning since.",
+      id: "Saya Sarah Amelia, mahasiswa semester 5 program studi Teknik Informatika yang jatuh cinta pada dunia editing video. Semuanya dimulai dari rasa penasaran kenapa sebuah potongan video bisa membuat orang betah menonton sampai habis — dan sejak itu saya tidak berhenti belajar.",
+      en: "I'm Sarah Amelia, a 5th semester Informatics Engineering student who fell in love with video editing. It started with plain curiosity about why some cuts make people watch to the very end — and I haven't stopped learning since.",
     },
     {
-      id: "Sehari-hari saya bekerja di Figma: melakukan riset kecil ke pengguna, menyusun wireframe, merapikan hierarki visual, lalu mengubahnya menjadi prototipe yang bisa diklik. Saya percaya desain yang baik lahir dari kebiasaan bertanya “apa yang sebenarnya dibutuhkan pengguna?” sebelum menyentuh warna atau tipografi.",
-      en: "Day to day I work in Figma: running light user research, sketching wireframes, tidying visual hierarchy, then turning it all into clickable prototypes. I believe good design comes from asking “what does the user actually need?” before touching colour or typography.",
+      id: "Sehari-hari saya bekerja di Adobe Premiere Pro dan After Effects: memilah footage, menyusun alur cerita, mengatur ritme potongan, lalu menambahkan motion graphics dan teks agar pesannya sampai. Saya percaya video yang baik lahir dari kebiasaan bertanya “apa yang ingin penonton rasakan?” sebelum menyentuh transisi.",
+      en: "Day to day I work in Adobe Premiere Pro and After Effects: sorting footage, shaping the story, setting the rhythm of each cut, then adding motion graphics and titles so the message lands. I believe good video comes from asking “what should the viewer feel?” before touching any transition.",
     },
     {
-      id: "Selain merancang, saya senang menyusun design system — token warna, skala tipografi, dan komponen yang konsisten agar produk tetap rapi saat dikembangkan. Kemampuan pemrograman saya membantu memahami batasan teknis, sehingga rancangan tetap realistis untuk diwujudkan.",
-      en: "Beyond designing screens, I enjoy building design systems — colour tokens, type scales, and consistent components so a product stays tidy as it grows. My programming background helps me respect technical constraints, keeping designs realistic to ship.",
+      id: "Selain memotong, saya senang merapikan warna dan audio — color grading yang konsisten antar-shot, subtitle yang mudah dibaca, dan sound mixing yang tidak menabrak dialog. Latar belakang pemrograman saya membuat alur kerja lebih rapi: penamaan file, template, dan preset yang bisa dipakai ulang.",
+      en: "Beyond cutting, I enjoy polishing colour and sound — consistent grading across shots, readable subtitles, and mixes that never fight the dialogue. My programming background keeps the workflow tidy: sensible file naming, reusable templates, and presets.",
     },
   ] as L[],
   /** Statistik singkat di hero — `value` dianimasikan sebagai angka. */
   stats: [
     { value: 5, decimals: 0, suffix: "", label: { id: "Semester ditempuh", en: "Semesters completed" } as L },
     { value: 3.84, decimals: 2, suffix: "", label: { id: "Indeks prestasi", en: "Grade point average" } as L },
-    { value: 24, decimals: 0, suffix: "+", label: { id: "Desain & prototipe", en: "Screens & prototypes" } as L },
+    { value: 24, decimals: 0, suffix: "+", label: { id: "Video & motion", en: "Videos & motion" } as L },
     { value: 8, decimals: 0, suffix: "", label: { id: "Sertifikat & kelas", en: "Certificates & courses" } as L },
   ],
   socials: [
     { icon: "github", label: "GitHub", href: "https://github.com/", handle: "@sarahamelia" },
     { icon: "linkedin", label: "LinkedIn", href: "https://linkedin.com/in/", handle: "in/sarahamelia" },
-    { icon: "instagram", label: "Instagram", href: "https://instagram.com/", handle: "@sarah.designs" },
+    { icon: "instagram", label: "Instagram", href: "https://instagram.com/", handle: "@sarah.edits" },
   ] as { icon: SocialIcon; label: string; href: string; handle: string }[],
 };
 
@@ -115,26 +115,26 @@ export type FocusIcon = "palette" | "layers" | "sparkles";
 export const focusAreas: { icon: FocusIcon; title: L; desc: L }[] = [
   {
     icon: "palette",
-    title: { id: "Perancangan Antarmuka", en: "Interface Design" },
+    title: { id: "Editing Video", en: "Video Editing" },
     desc: {
-      id: "Menyusun wireframe dan tampilan akhir di Figma dengan hierarki visual yang jelas, konsisten, dan mudah dipahami pengguna.",
-      en: "Shaping wireframes and final screens in Figma with clear, consistent visual hierarchy that users understand at a glance.",
+      id: "Memilah footage, menyusun alur cerita, dan mengatur ritme potongan agar video enak ditonton sampai akhir.",
+      en: "Sorting footage, shaping the storyline, and setting the rhythm of each cut so the video is easy to watch to the end.",
     },
   },
   {
     icon: "layers",
-    title: { id: "Design System", en: "Design System" },
+    title: { id: "Motion Graphics", en: "Motion Graphics" },
     desc: {
-      id: "Membangun token warna, skala tipografi, dan pustaka komponen agar produk tetap rapi dan mudah dikembangkan bersama tim.",
-      en: "Building colour tokens, type scales, and component libraries so a product stays tidy and easy for a team to extend.",
+      id: "Membuat animasi teks, lower third, dan transisi di After Effects supaya informasi tampil lebih jelas dan hidup.",
+      en: "Building animated titles, lower thirds, and transitions in After Effects so information reads clearly and feels alive.",
     },
   },
   {
     icon: "sparkles",
-    title: { id: "Prototipe & Pengujian", en: "Prototyping & Testing" },
+    title: { id: "Color & Audio", en: "Colour & Audio" },
     desc: {
-      id: "Membuat prototipe interaktif, mengujinya ke calon pengguna, lalu menyempurnakan alur berdasarkan temuan tersebut.",
-      en: "Crafting interactive prototypes, testing them with real users, then refining the flow based on what the test revealed.",
+      id: "Menyeimbangkan warna antar-shot dan merapikan audio — dialog jernih, musik pas, tanpa ada yang saling menabrak.",
+      en: "Balancing colour across shots and cleaning up audio — clear dialogue, fitting music, nothing fighting for space.",
     },
   },
 ];
@@ -145,61 +145,56 @@ export const focusAreas: { icon: FocusIcon; title: L; desc: L }[] = [
 
 export const skillGroups = [
   {
-    title: { id: "Alat Desain", en: "Design Tools" },
+    title: { id: "Alat Editing", en: "Editing Tools" },
     accent: "from-violet-500 to-fuchsia-500",
     items: [
-      { name: "Figma", level: 92 },
-      { name: "Framer", level: 76 },
-      { name: "Adobe Illustrator", level: 80 },
-      { name: "Adobe Photoshop", level: 78 },
-      { name: "Adobe XD", level: 74 },
-      { name: "ProtoPie", level: 68 },
+      { name: "Adobe Premiere Pro", level: 92 },
+      { name: "Adobe After Effects", level: 84 },
+      { name: "DaVinci Resolve", level: 78 },
+      { name: "CapCut", level: 88 },
+      { name: "Adobe Audition", level: 72 },
+      { name: "Adobe Photoshop", level: 80 },
     ],
   },
   {
-    title: { id: "Metode UX", en: "UX Methods" },
+    title: { id: "Teknik Editing", en: "Editing Craft" },
     accent: "from-cyan-400 to-sky-500",
     items: [
-      { name: "Wireframing", level: 90 },
-      { name: "User Flow", level: 86 },
-      { name: "User Research", level: 84 },
-      { name: "Information Architecture", level: 82 },
-      { name: "Usability Testing", level: 80 },
-      { name: "Prototyping", level: 88 },
+      { name: "Cutting & Pacing", level: 90 },
+      { name: "Storytelling", level: 86 },
+      { name: "Transitions", level: 84 },
+      { name: "Subtitle & Caption", level: 88 },
+      { name: "Color Grading", level: 82 },
+      { name: "Sound Design", level: 78 },
     ],
   },
   {
-    title: { id: "Desain Visual", en: "Visual Design" },
+    title: { id: "Konten & Visual", en: "Content & Visual" },
     accent: "from-fuchsia-500 to-violet-600",
     items: [
-      { name: "Typography", level: 86 },
-      { name: "Color Theory", level: 84 },
-      { name: "Design System", level: 88 },
-      { name: "Responsive Layout", level: 85 },
-      { name: "Accessibility", level: 76 },
-      { name: "Design Handoff", level: 80 },
+      { name: "Motion Graphics", level: 84 },
+      { name: "Short-form Video", level: 88 },
+      { name: "Thumbnail Design", level: 86 },
+      { name: "Typography", level: 80 },
+      { name: "Storyboard", level: 78 },
+      { name: "Export & Codec", level: 82 },
     ],
   },
 ];
 
 /** Teks berjalan (marquee) di bawah daftar skill. */
 export const techMarquee = [
-  "Figma",
-  "Wireframe",
-  "Prototype",
-  "Design System",
-  "User Research",
-  "Usability Testing",
-  "Typography",
-  "Color Theory",
-  "Accessibility",
-  "User Flow",
-  "Framer",
-  "Adobe XD",
-  "Illustrator",
+  "Premiere Pro",
+  "After Effects",
+  "DaVinci Resolve",
+  "CapCut",
+  "Audition",
   "Photoshop",
-  "Miro",
-  "Notion",
+  "Illustrator",
+  "Motion Graphics",
+  "Color Grading",
+  "Sound Design",
+  "Storyboard",
 ];
 
 /* ------------------------------------------------------------------ */
@@ -222,18 +217,18 @@ export const timeline: TimelineItem[] = [
     title: { id: "S1 Teknik Informatika", en: "BSc in Informatics Engineering" },
     org: { id: "Universitas Teknologi Cilegon", en: "Cilegon University of Technology" },
     desc: {
-      id: "Menempuh semester 5 dengan IPK 3.84. Mendalami interaksi manusia–komputer, basis data, dan rekayasa perangkat lunak yang menunjang cara saya merancang antarmuka.",
-      en: "Currently in semester 5 with a 3.84 GPA. Coursework spans human–computer interaction, databases, and software engineering — all of which shape how I design interfaces.",
+      id: "Menempuh semester 5 dengan IPK 3.84. Mendalami interaksi manusia–komputer, basis data, dan rekayasa perangkat lunak yang menunjang cara saya menyusun alur cerita dan merapikan proses editing.",
+      en: "Currently in semester 5 with a 3.84 GPA. Coursework spans human–computer interaction, databases, and software engineering — all of which shape how I structure stories and organise my editing workflow.",
     },
     kind: "university",
   },
   {
     period: { id: "2020 — 2023", en: "2020 — 2023" },
-    title: { id: "SMA 1 Cilegon", en: "SMA 1 Cilegon" },
+    title: { id: "SMA Negeri 1 Cilegon", en: "SMA Negeri 1 Cilegon" },
     org: { id: "Sekolah Menengah Atas", en: "Senior High School" },
     desc: {
-      id: "Mengambil jurusan Matematika dan Ilmu Pengetahuan Alam. Di sini saya mulai mengenal desain grafis dan membuat poster kegiatan sekolah secara mandiri.",
-      en: "Took the Mathematics and Natural Sciences track. This is where I first picked up graphic design, making event posters for school activities on my own.",
+      id: "Mengambil jurusan Matematika dan Ilmu Pengetahuan Alam. Di sini saya mulai mengenal desain grafis dan mengedit video acara sekolah secara mandiri.",
+      en: "Took the Mathematics and Natural Sciences track. This is where I first picked up graphic design and started editing videos for school events on my own.",
     },
     kind: "senior",
   },
@@ -269,8 +264,8 @@ export const contact = {
     en: "Have a project or an internship in mind?",
   } as L,
   description: {
-    id: "Saya selalu senang berdiskusi soal desain antarmuka, riset pengguna, atau peluang magang UI/UX. Kirim pesan dan saya akan balas secepatnya.",
-    en: "I'm always happy to talk about interface design, user research, or UI/UX internship opportunities. Drop a message and I'll reply soon.",
+    id: "Saya selalu senang berdiskusi soal editing video, motion graphics, atau peluang magang. Kirim pesan dan saya akan balas secepatnya.",
+    en: "I'm always happy to talk about video editing, motion graphics, or internship opportunities. Drop a message and I'll reply soon.",
   } as L,
   note: {
     id: "Biasanya membalas dalam 24 jam pada hari kerja.",
@@ -313,10 +308,10 @@ export const ui = {
     },
     skills: {
       eyebrow: { id: "Keahlian", en: "Skills" } as L,
-      title: { id: "Alat & metode yang saya pakai setiap hari", en: "Tools & methods I use every day" } as L,
+      title: { id: "Alat & teknik yang saya pakai setiap hari", en: "Tools & techniques I use every day" } as L,
       subtitle: {
-        id: "Kombinasi kemampuan desain dan pemahaman teknis yang saya asah melalui kuliah, studi kasus, dan eksplorasi mandiri.",
-        en: "A blend of design craft and technical understanding, sharpened through coursework, case studies, and self exploration.",
+        id: "Kombinasi kemampuan editing dan pemahaman teknis yang saya asah melalui kuliah, proyek konten, dan eksplorasi mandiri.",
+        en: "A blend of editing craft and technical understanding, sharpened through coursework, content projects, and self exploration.",
       } as L,
       coreLabel: { id: "Kemampuan inti", en: "Core strengths" } as L,
     },
@@ -324,8 +319,8 @@ export const ui = {
       eyebrow: { id: "Pendidikan", en: "Education" } as L,
       title: { id: "Riwayat pendidikan saya", en: "My education journey" } as L,
       subtitle: {
-        id: "Jejak dari sekolah dasar hingga bangku kuliah — setiap tahapnya membentuk cara saya melihat dan merancang.",
-        en: "A path from elementary school to university — each stage shaped the way I see and design.",
+        id: "Jejak dari sekolah dasar hingga bangku kuliah — setiap tahapnya membentuk cara saya melihat dan menyusun cerita.",
+        en: "A path from elementary school to university — each stage shaped the way I see and tell stories.",
       } as L,
     },
     contact: {
@@ -335,8 +330,8 @@ export const ui = {
       formEmail: { id: "Email", en: "Email" } as L,
       formSubject: { id: "Subjek", en: "Subject" } as L,
       formMessage: { id: "Pesan", en: "Message" } as L,
-      placeholderName: { id: "Nama lengkap Anda", en: "Your full name" } as L,
-      placeholderEmail: { id: "nama@email.com", en: "name@email.com" } as L,
+      placeholderName: { id: "Sarah Amelia", en: "Sarah Amelia" } as L,
+      placeholderEmail: { id: "srhmeliia55@gmail.com", en: "srhmeliia55@gmail.com" } as L,
       placeholderSubject: { id: "Kolaborasi proyek", en: "Project collaboration" } as L,
       placeholderMessage: { id: "Ceritakan sedikit tentang ide Anda…", en: "Tell me a bit about your idea…" } as L,
       emailLabel: { id: "Email", en: "Email" } as L,
@@ -356,17 +351,19 @@ export const ui = {
 /* ------------------------------------------------------------------ */
 
 export const siteMeta = {
-  title: "Sarah Amelia — UI/UX Designer · Teknik Informatika",
+  title: "Sarah Amelia — Video Editor · Teknik Informatika",
   description:
-    "Portofolio Sarah Amelia — UI/UX Designer dan mahasiswa Teknik Informatika semester 5 yang berfokus pada design system dan prototipe antarmuka.",
-  url: "https://sarahamelia.example.com",
+    "Portofolio Sarah Amelia — Video Editor dan mahasiswa Teknik Informatika semester 5 yang berfokus pada editing, motion graphics, dan color grading.",
+  url: "https://sarahamelia.my.id",
   keywords: [
     "Sarah Amelia",
     "portfolio",
-    "UI/UX designer",
-    "product design",
-    "Figma",
-    "design system",
+    "video editor",
+    "video editing",
+    "motion graphics",
+    "color grading",
+    "Premiere Pro",
+    "After Effects",
     "teknik informatika",
     "Cilegon",
   ],
