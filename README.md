@@ -9,7 +9,7 @@ Teknik Informatika semester 5 yang berfokus pada **UI/UX design**, design system
 | --- | --- |
 | **Tema terang & gelap** | Tombol ganti tema di navbar. Pilihan disimpan di `localStorage`; bawaan mengikuti preferensi sistem. Tanpa kedipan warna saat halaman dimuat. |
 | **Bilingual (ID/EN)** | Tombol switch bahasa di navbar. Pilihan disimpan di `localStorage`. |
-| **Hero 3D (Three.js)** | Blob organik dengan shader simplex-noise + medan partikel, plus parallax kursor. Palet & mode pencampuran menyesuaikan tema. |
+| **Hero 3D (Three.js)** | Medan partikel memanjang dengan shader titik halus + parallax kursor. Palet & mode pencampuran menyesuaikan tema. |
 | **Animasi (Framer Motion)** | Reveal saat scroll, stagger, teks huruf-demi-huruf, kartu 3D tilt, tombol magnetik. |
 | **Gulir halus (Lenis)** | Smooth scroll dengan dukungan `prefers-reduced-motion`. |
 | **Kursor kustom** | Titik presisi + cincin pegas. Nonaktif otomatis di perangkat sentuh. |
