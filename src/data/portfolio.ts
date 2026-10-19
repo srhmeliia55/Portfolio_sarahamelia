@@ -72,8 +72,8 @@ export const profile = {
   email: "srhmellia55@gmail.com",
   phone: "+62 812-3456-7890",
   availability: {
-    id: "Terbuka untuk magang video editor dan proyek konten",
-    en: "Open to video editing internships and content projects",
+    id: "Terbuka untuk magang & proyek video",
+    en: "Open to editing internships & projects",
   } as L,
   resumeUrl: "#",
   bio: [

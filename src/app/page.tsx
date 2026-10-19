@@ -1,4 +1,5 @@
 import { Footer } from "@/components/layout/footer";
+import { MobileNav } from "@/components/layout/mobile-nav";
 import { Navbar } from "@/components/layout/navbar";
 import { About } from "@/components/sections/about";
 import { Contact } from "@/components/sections/contact";
@@ -27,6 +28,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <MobileNav />
       <main className="relative">
         <Hero />
         <About />

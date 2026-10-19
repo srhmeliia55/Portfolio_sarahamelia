@@ -15,7 +15,7 @@ export function Footer() {
   const year = useCurrentYear();
 
   return (
-    <footer className="relative mt-10 border-t border-hairline pb-10 pt-14">
+    <footer className="relative mt-10 border-t border-hairline pt-14 pb-32 lg:pb-10">
       <Container>
         <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
           <div className="max-w-sm">
