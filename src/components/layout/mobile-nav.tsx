@@ -23,10 +23,11 @@ const NAV_IDS = ui.nav.map((item) => item.href.replace("#", ""));
  * Navigasi bawah khusus layar kecil.
  * Di desktop navigasi sudah ada di navbar atas, jadi bar ini disembunyikan.
  */
-export function MobileNav() {
+export function MobileNav({ activeId }: { activeId?: string }) {
   const { t } = useLocale();
   const scrollToSection = useScrollToSection();
-  const active = useScrollSpy(NAV_IDS, NAV_IDS[0]);
+  const spyActive = useScrollSpy(NAV_IDS, NAV_IDS[0]);
+  const active = activeId ?? spyActive;
 
   return (
     <nav

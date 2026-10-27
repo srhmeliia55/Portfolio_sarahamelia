@@ -1,6 +1,7 @@
 "use client";
 
 import { ArrowUp } from "lucide-react";
+import { useLenis } from "lenis/react";
 import { Magnetic } from "@/components/ui/magnetic";
 import { socialIconMap } from "@/components/ui/social-icons";
 import { Container } from "@/components/ui/section";
@@ -12,7 +13,16 @@ import { useScrollToSection } from "@/lib/use-scroll-to";
 export function Footer() {
   const { t } = useLocale();
   const scrollToSection = useScrollToSection();
+  const lenis = useLenis();
   const year = useCurrentYear();
+
+  const backToTop = () => {
+    if (lenis) {
+      lenis.scrollTo(0, { duration: 1.15 });
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
 
   return (
     <footer className="relative mt-10 border-t border-hairline pt-14 pb-32 lg:pb-10">
@@ -82,7 +92,7 @@ export function Footer() {
             <Magnetic strength={0.3} className="mt-2">
               <button
                 type="button"
-                onClick={() => scrollToSection("#home")}
+                onClick={backToTop}
                 className="group flex items-center gap-2 rounded-full border border-hairline bg-elevated px-4 py-2.5 text-[12.5px] font-medium text-ink-2 transition hover:border-violet-400/40 hover:text-ink"
               >
                 <ArrowUp className="size-3.5 transition group-hover:-translate-y-0.5" />

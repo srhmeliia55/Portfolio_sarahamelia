@@ -8,5 +8,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 1,
     },
+    {
+      url: `${siteMeta.url}/projects/web-2`,
+      changeFrequency: "yearly",
+      priority: 0.6,
+    },
   ];
 }

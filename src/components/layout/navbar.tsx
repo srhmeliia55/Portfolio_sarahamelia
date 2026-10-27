@@ -14,10 +14,15 @@ import { useScrollToSection } from "@/lib/use-scroll-to";
 
 const NAV_IDS = ui.nav.map((item) => item.href.replace("#", ""));
 
-export function Navbar() {
+/**
+ * `activeId` dipakai di halaman selain beranda: item navigasi tidak perlu
+ * terlihat aktif karena section-nya tidak ada di halaman tersebut.
+ */
+export function Navbar({ activeId }: { activeId?: string }) {
   const { t, locale, setLocale } = useLocale();
   const scrollToSection = useScrollToSection();
-  const active = useScrollSpy(NAV_IDS, NAV_IDS[0]);
+  const spyActive = useScrollSpy(NAV_IDS, NAV_IDS[0]);
+  const active = activeId ?? spyActive;
 
   const [scrolled, setScrolled] = useState(false);
 

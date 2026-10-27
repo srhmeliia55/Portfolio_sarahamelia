@@ -15,6 +15,7 @@ Teknik Informatika semester 5 yang berfokus pada **editing video**, motion graph
 | **Kursor kustom** | Titik presisi + cincin pegas. Nonaktif otomatis di perangkat sentuh. |
 | **Indikator kemajuan** | Garis progres gulir di bagian atas halaman. |
 | **SEO lengkap** | Metadata, Open Graph (gambar dibuat otomatis), JSON-LD, `robots.txt`, `sitemap.xml`. |
+| **Proyek Web 2** | Halaman `/projects/web-2` berisi tujuh latihan PHP (echo, PHP dalam HTML, ulang tahun, nilai rapot, while, do while, foreach) dengan blok kode dan contoh output. |
 
 ## 🧱 Teknologi
 
@@ -42,6 +43,15 @@ npm run start    # jalankan hasil build
 npm run lint     # ESLint
 ```
 
+### 🪟 Windows: cara cepat
+
+Klik dua kali **`start.bat`** di folder proyek (atau jalankan `start.bat` dari terminal).
+Skrip akan memeriksa Node.js, memasang dependency bila `node_modules` belum ada, lalu
+menjalankan dev server di `http://localhost:3000`.
+
+Tekan **Ctrl+C** untuk menghentikan server. Bila muncul pertanyaan
+`Terminate batch job (Y/N)?`, jawab **Y**.
+
 > Catatan Windows: bila `npm`/`npx` diblokir kebijakan eksekusi PowerShell, jalankan
 > lewat `cmd /c "npm run dev"`.
 
@@ -52,6 +62,7 @@ src/
 ├─ app/
 │  ├─ layout.tsx            # font, metadata, skrip tema, provider
 │  ├─ page.tsx              # susunan seluruh section
+│  ├─ projects/web-2/       # halaman tutorial PHP (Proyek Web 2)
 │  ├─ globals.css           # token tema, utilitas kustom, keyframes
 │  ├─ opengraph-image.tsx   # gambar pratinjau media sosial (otomatis)
 │  ├─ robots.ts             # robots.txt
@@ -63,7 +74,8 @@ src/
 │  ├─ ui/                   # komponen kecil (reveal, tilt, marquee, toggle tema, dll.)
 │  └─ providers.tsx         # tema, Lenis, locale, backdrop, kursor, scroll progress
 ├─ data/
-│  └─ portfolio.ts          # 👈 SEMUA ISI KONTEN
+│  ├─ portfolio.ts          # 👈 SEMUA ISI KONTEN
+│  └─ web2.ts               # materi & teks halaman Proyek Web 2
 └─ lib/
    ├─ theme.tsx             # provider tema terang/gelap
    ├─ locale.tsx            # provider bahasa ID/EN
@@ -92,6 +104,17 @@ Bagian yang bisa diubah:
 8. **`siteMeta`** — judul, deskripsi, dan URL untuk SEO.
 
 > **Tips:** ganti `siteMeta.url` dan `profile.resumeUrl` dengan URL asli sebelum deploy.
+
+### 🧪 Mengubah materi Proyek Web 2
+
+Isi halaman `/projects/web-2` ada di `src/data/web2.ts`:
+
+- **`web2Lessons`** — daftar latihan (judul, penjelasan, nama file, kode PHP, contoh output, dan catatan).
+- **`web2Page`** — teks antarmuka halaman (hero, label tombol, langkah menjalankan).
+- **`web2Meta`** — judul & deskripsi untuk SEO.
+
+Kode pada setiap latihan hanya ditampilkan sebagai contoh — PHP dijalankan di server lokal
+(mis. XAMPP), bukan di dalam Next.js.
 
 ### 🖼️ Mengganti foto profil
 
