@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { GraduationCap, Home, Mail, Sparkles, User } from "lucide-react";
+import { FolderCode, GraduationCap, Home, Mail, Sparkles, User } from "lucide-react";
 import { ui } from "@/data/portfolio";
 import { cn } from "@/lib/cn";
 import { useLocale } from "@/lib/locale";
@@ -13,6 +13,7 @@ const NAV_ICONS: Record<string, typeof Home> = {
   "#home": Home,
   "#about": User,
   "#skills": Sparkles,
+  "#projects": FolderCode,
   "#journey": GraduationCap,
   "#contact": Mail,
 };

@@ -86,7 +86,17 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body className="font-sans antialiased">
+      <body
+        className="font-sans antialiased"
+        /**
+         * Ekstensi browser (mis. ColorZilla yang menambahkan
+         * `cz-shortcut-listen="true"` ke <body>) menyisipkan atribut ke HTML
+         * sebelum React melakukan hidrasi. Atribut itu bukan bagian dari
+         * markup kita, jadi peringatan mismatch untuk elemen ini
+         * diabaikan — bukan bug aplikasi.
+         */
+        suppressHydrationWarning
+      >
         <Providers>{children}</Providers>
       </body>
     </html>

@@ -282,6 +282,7 @@ export const ui = {
     { href: "#home", label: { id: "Beranda", en: "Home" } as L },
     { href: "#about", label: { id: "Tentang", en: "About" } as L },
     { href: "#skills", label: { id: "Keahlian", en: "Skills" } as L },
+    { href: "#projects", label: { id: "Proyek", en: "Projects" } as L },
     { href: "#journey", label: { id: "Pendidikan", en: "Education" } as L },
     { href: "#contact", label: { id: "Kontak", en: "Contact" } as L },
   ],
@@ -322,6 +323,19 @@ export const ui = {
         id: "Jejak dari sekolah dasar hingga bangku kuliah — setiap tahapnya membentuk cara saya melihat dan menyusun cerita.",
         en: "A path from elementary school to university — each stage shaped the way I see and tell stories.",
       } as L,
+    },
+    projects: {
+      eyebrow: { id: "Proyek", en: "Projects" } as L,
+      title: { id: "Yang pernah saya bangun", en: "Things I have built" } as L,
+      subtitle: {
+        id: "Kumpulan proyek kuliah dan proyek pribadi. Setiap kartu membuka halaman berisi penjelasan, kode, dan hasil kerjanya.",
+        en: "A collection of coursework and personal projects. Each card opens a page with the explanation, code, and the result.",
+      } as L,
+      featuredLabel: { id: "Proyek unggulan", en: "Featured project" } as L,
+      openCta: { id: "Buka proyek", en: "Open project" } as L,
+      soonLabel: { id: "Segera hadir", en: "Coming soon" } as L,
+      highlightsLabel: { id: "Isi proyek", en: "What's inside" } as L,
+      othersLabel: { id: "Proyek lainnya", en: "More projects" } as L,
     },
     contact: {
       eyebrow: { id: "Kontak", en: "Contact" } as L,

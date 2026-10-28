@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, Lightbulb } from "lucide-react";
+import { ChevronLeft, ChevronRight, Lightbulb } from "lucide-react";
 import type { MouseEvent } from "react";
 import { CodeBlock } from "@/components/ui/code-block";
 import { OutputPreview } from "@/components/ui/output-preview";
@@ -44,7 +44,13 @@ export function Web2Project() {
                 {t(home)}
               </Link>
               <span aria-hidden="true">/</span>
-              <span>{t(web2Page.breadcrumb)}</span>
+              <button
+                type="button"
+                onClick={() => scrollToSection("#projects")}
+                className="transition-colors hover:text-accent"
+              >
+                {t(web2Page.breadcrumb)}
+              </button>
               <span aria-hidden="true">/</span>
               <span className="text-ink-2">Web 2</span>
             </nav>
@@ -83,13 +89,13 @@ export function Web2Project() {
                 className="group flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-500 to-fuchsia-500 px-5 py-2.5 text-[13px] font-semibold text-white shadow-[0_10px_30px_-12px_rgba(192,38,211,0.9)] transition hover:brightness-110"
               >
                 {t(web2Page.startCta)}
-                <ArrowRight className="size-3.5 transition group-hover:translate-x-0.5" />
+                <ChevronRight className="size-4 transition group-hover:translate-x-0.5" />
               </a>
               <Link
                 href="/"
                 className="group flex items-center gap-2 rounded-full border border-hairline bg-elevated px-5 py-2.5 text-[13px] font-medium text-ink-2 transition hover:border-violet-400/40 hover:text-ink"
               >
-                <ArrowLeft className="size-3.5 transition group-hover:-translate-x-0.5" />
+                <ChevronLeft className="size-4 transition group-hover:-translate-x-0.5" />
                 {t(web2Page.backCta)}
               </Link>
             </div>
@@ -126,7 +132,7 @@ export function Web2Project() {
                       </span>
                       <span className="mt-1 flex items-center gap-1.5 font-mono text-[10.5px] text-ink-4">
                         <span className="truncate">{lesson.file}</span>
-                        <ArrowRight className="size-3 shrink-0 opacity-0 transition group-hover:translate-x-0.5 group-hover:opacity-100" />
+                        <ChevronRight className="size-3.5 shrink-0 opacity-0 transition group-hover:translate-x-0.5 group-hover:opacity-100" />
                       </span>
                     </span>
                   </a>
@@ -266,7 +272,7 @@ export function Web2Project() {
                 href="/"
                 className="group mt-1 flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-500 to-fuchsia-500 px-5 py-2.5 text-[13px] font-semibold text-white shadow-[0_10px_30px_-12px_rgba(192,38,211,0.9)] transition hover:brightness-110"
               >
-                <ArrowLeft className="size-3.5 transition group-hover:-translate-x-0.5" />
+                <ChevronLeft className="size-4 transition group-hover:-translate-x-0.5" />
                 {t(web2Page.backCta)}
               </Link>
             </div>

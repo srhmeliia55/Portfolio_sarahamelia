@@ -200,13 +200,14 @@ export function HeroScene({ className, theme = "dark" }: { className?: string; t
     resizeObserver.observe(container);
 
     /* ---------------- Loop animasi ---------------- */
-    const clock = new THREE.Clock();
+    const timer = new THREE.Timer();
     let frameId = 0;
     let visible = true;
 
-    const renderFrame = () => {
-      const delta = Math.min(clock.getDelta(), 0.05);
-      const elapsed = clock.getElapsedTime();
+    const renderFrame = (timestamp?: number) => {
+      timer.update(timestamp);
+      const delta = Math.min(timer.getDelta(), 0.05);
+      const elapsed = timer.getElapsed();
 
       smooth.x += (pointer.x - smooth.x) * 0.05;
       smooth.y += (pointer.y - smooth.y) * 0.05;
@@ -226,11 +227,10 @@ export function HeroScene({ className, theme = "dark" }: { className?: string; t
 
     const start = () => {
       if (frameId) return;
-      clock.start();
-      const tick = () => {
+      const tick = (timestamp: number) => {
         frameId = requestAnimationFrame(tick);
         if (!visible || document.hidden) return;
-        renderFrame();
+        renderFrame(timestamp);
       };
       frameId = requestAnimationFrame(tick);
     };

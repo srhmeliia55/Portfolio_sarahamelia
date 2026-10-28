@@ -81,7 +81,7 @@ export function Navbar({ activeId }: { activeId?: string }) {
                 type="button"
                 onClick={() => scrollToSection(item.href)}
                 className={cn(
-                  "relative rounded-full px-3.5 py-1.5 text-[13px] font-medium transition-colors duration-300",
+                  "relative rounded-full px-3 py-1.5 text-[13px] font-medium transition-colors duration-300 xl:px-3.5",
                   isActive ? "text-ink" : "text-ink-3 hover:text-ink",
                 )}
               >
